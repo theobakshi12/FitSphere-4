@@ -11,3 +11,11 @@
 .workouts {
   margin-right: 20px;
 }
+
+.joinButton {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
