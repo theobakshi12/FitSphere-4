@@ -7,6 +7,7 @@ function App() {
   return (
     <div>
       <NavBar></NavBar>
+      
       {/* <StyledMenu
         id="demo-customized-menu"
         MenuListProps={{

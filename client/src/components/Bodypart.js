@@ -6,9 +6,9 @@ class Bodypart extends React.Component {
       const { name, bodypart, image, description } = this.props;
     return (
       <div>
-        <h1>{bodypart}</h1>
+        <h1>{"Biceps"}</h1>
         <Exercise 
-          name={name}
+          name={"Dumbbell curl"}
           image={image}
           description={description}
         />
