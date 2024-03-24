@@ -9,10 +9,10 @@ function App() {
 
       <img className="bg" src="background.png"></img>
       <div className="joinButton1">
-      <Button variant="light">Get Started at a Gym</Button>{' '}
+      <Button href="/body" variant="light">Get Started at a Gym</Button>{' '}
       </div>
       <div className="joinButton2">
-      <Button variant="light">Get Started at Home</Button>{' '}
+      <Button href="/homebody" variant="light">Get Started at Home</Button>{' '}
       </div>
     </div>
   );
