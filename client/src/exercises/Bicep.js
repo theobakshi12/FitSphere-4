@@ -30,7 +30,7 @@ const bicepsExercises = [
 
 ];
 
-function Biscep() {
+function Bicep() {
   return (
     <div>
       <h1>Biceps Exercises</h1>
@@ -45,4 +45,4 @@ function Biscep() {
   );
 }
 
-export default Biscep;
+export default Bicep;

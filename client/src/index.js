@@ -10,7 +10,16 @@ import Body from './Body';
 import reportWebVitals from './reportWebVitals';
 import Exercises from './Exercises';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ExerciseList from './exercises/Abs';
+import Abs from './exercises/Abs';
+import Bicep from './exercises/Bicep';
+import Calves from './exercises/Calves';
+import Chest from './exercises/Chest';
+import Glutes from './exercises/Glutes';
+import Hamstring from './exercises/Hamstring';
+import Lats from './exercises/Lats';
+import Quads from './exercises/Quads';
+import Shoulders from './exercises/Shoulders';
+import Triceps from './exercises/Triceps';
 
 const router = createBrowserRouter([
   {
@@ -26,9 +35,45 @@ const router = createBrowserRouter([
     element: <Body></Body>
   },
   {
+    path:"/abs",
+    element: <Abs></Abs>
+  },
+  {
+    path:"/biceps",
+    element: <Bicep></Bicep>
+  },
+  {
+    path:"/calves",
+    element: <Calves></Calves>
+  },
+  {
     path:"/chest",
-    element: <ExerciseList></ExerciseList>
-  }
+    element: <Chest></Chest>
+  },
+  {
+    path:"/glutes",
+    element: <Glutes></Glutes>
+  },
+  {
+    path:"/hamstring",
+    element: <Hamstring></Hamstring>
+  },
+  {
+    path:"/lats",
+    element: <Lats></Lats>
+  },
+  {
+    path:"/quads",
+    element: <Quads></Quads>
+  },
+  {
+    path:"/shoulders",
+    element: <Shoulders></Shoulders>
+  },
+  {
+    path:"/triceps",
+    element: <Triceps></Triceps>
+  },
 
 ]);
 
