@@ -6,8 +6,9 @@ function App() {
   return (
     <div>
       <NavBar></NavBar>
+      <img className="bg" src="background.png"></img>
       <div className="joinButton">
-        <Button variant="outline-dark">Start Your Journey</Button>{" "}
+      <Button variant="light">Start Your Journey</Button>{' '}
       </div>
     </div>
   );
