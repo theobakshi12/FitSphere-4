@@ -12,7 +12,7 @@ function NavBar() {
         <Navbar.Brand className="logo" href="/">FITSPHERE</Navbar.Brand>
         <NavDropdown className="workouts" title="Workouts" id="basic-nav-dropdown">
               <NavDropdown.Item href="/body">Gym Workouts</NavDropdown.Item>
-              <NavDropdown.Item href="#homeWorkouts">Home Workouts (No Equipment)</NavDropdown.Item>
+              <NavDropdown.Item href="/homebody">Home Workouts (No Equipment)</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown className="workouts" title="Progress" id="basic-nav-dropdown">
               <NavDropdown.Item>17 💪</NavDropdown.Item>

@@ -7,6 +7,7 @@ import {
 import './index.css';
 import App from './App';
 import Body from './Body';
+import HomeBody from './HomeBody';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Abs from './exercises/Abs';
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path:"/body",
     element: <Body></Body>
+  },
+  {
+    path:"/homebody",
+    element: <HomeBody></HomeBody>
   },
   {
     path:"/abs",
