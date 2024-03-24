@@ -16,6 +16,7 @@ function NavBar() {
             </NavDropdown>
             <NavDropdown className="workouts" title="Progress" id="basic-nav-dropdown">
               <NavDropdown.Item>17 🏋️</NavDropdown.Item>
+              <button>+</button>
             </NavDropdown>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
