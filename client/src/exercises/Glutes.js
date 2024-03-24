@@ -34,7 +34,7 @@ const gluteExercises = [
 
 ];
 
-function ExerciseList() {
+function Glutes() {
   return (
     <div>
       <h1>Glute Exercises</h1>
@@ -49,4 +49,4 @@ function ExerciseList() {
   );
 }
 
-export default ExerciseList;
+export default Glutes;

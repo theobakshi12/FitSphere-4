@@ -33,7 +33,7 @@ const shoulderExercises = [
 
 ];
 
-function ExerciseList() {
+function Shoulders() {
   return (
     <div>
       <h1>Shoulder Exercises</h1>
@@ -48,4 +48,4 @@ function ExerciseList() {
   );
 }
 
-export default ExerciseList;
+export default Shoulders;

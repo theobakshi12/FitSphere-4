@@ -23,7 +23,7 @@ const tricepExercises = [
   },
 ];
 
-function ExerciseList() {
+function Triceps() {
   return (
     <div>
       <h1>Tricep Exercises</h1>
@@ -38,4 +38,4 @@ function ExerciseList() {
   );
 }
 
-export default ExerciseList;
+export default Triceps;

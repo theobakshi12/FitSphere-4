@@ -22,7 +22,7 @@ const abExercises = [
 
 ];
 
-function ExerciseList() {
+function Abs() {
   return (
     <div>
       <h1>Ab Exercises</h1>
@@ -37,4 +37,4 @@ function ExerciseList() {
   );
 }
 
-export default ExerciseList;
+export default Abs;

@@ -21,7 +21,7 @@ const chestExercises = [
   
 ];
 
-function ExerciseList() {
+function Chest() {
   return (
     <div>
       <h1>Chest Exercises</h1>
@@ -36,4 +36,4 @@ function ExerciseList() {
   );
 }
 
-export default ExerciseList;
+export default Chest;

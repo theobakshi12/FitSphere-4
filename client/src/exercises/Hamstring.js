@@ -23,7 +23,7 @@ const hamstringExercises = [
   },
 ];
 
-function ExerciseList() {
+function Hamstring() {
   return (
     <div>
       <h1>HamString Exercises</h1>
@@ -38,4 +38,4 @@ function ExerciseList() {
   );
 }
 
-export default ExerciseList;
+export default Hamstring;

@@ -33,7 +33,7 @@ const latExercises = [
 
 ];
 
-function ExerciseList() {
+function Lats() {
   return (
     <div>
       <h1>Lat Exercises</h1>
@@ -48,4 +48,4 @@ function ExerciseList() {
   );
 }
 
-export default ExerciseList;
+export default Lats;

@@ -35,7 +35,7 @@ const quadExercises = [
 
 ];
 
-function ExerciseList() {
+function Quads() {
   return (
     <div>
       <h1>Quad Exercises</h1>
@@ -50,4 +50,4 @@ function ExerciseList() {
   );
 }
 
-export default ExerciseList;
+export default Quads;

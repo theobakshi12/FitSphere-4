@@ -21,7 +21,7 @@ const calfExercises = [
   },
 ];
 
-function ExerciseList() {
+function Calves() {
   return (
     <div>
       <h1>Calf Exercises</h1>
@@ -36,4 +36,4 @@ function ExerciseList() {
   );
 }
 
-export default ExerciseList;
+export default Calves;
