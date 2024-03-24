@@ -1,6 +1,8 @@
 import React from 'react';
 import hamstring_curl from '../gifs/hamstring_curl.gif'
 import deadlift from '../gifs/deadlift.gif'
+import NavBar from '../components/navBar';
+
 
 const hamstringExercises = [
   {
@@ -26,6 +28,7 @@ const hamstringExercises = [
 function Hamstring() {
   return (
     <div>
+      <NavBar></NavBar>
       <h1>HamString Exercises</h1>
       {hamstringExercises.map((exercise, index) => (
         <div key={index}>

@@ -2,6 +2,8 @@ import React from 'react';
 import shoulder_press from '../gifs/shoulder_press.gif'
 import front_raises from '../gifs/front_raises.gif'
 import lateral_raises from '../gifs/lateral_raises.gif'
+import NavBar from '../components/navBar';
+
 
 const shoulderExercises = [
   {
@@ -36,6 +38,7 @@ const shoulderExercises = [
 function Shoulders() {
   return (
     <div>
+      <NavBar></NavBar>
       <h1>Shoulder Exercises</h1>
       {shoulderExercises.map((exercise, index) => (
         <div key={index}>

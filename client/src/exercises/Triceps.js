@@ -1,6 +1,8 @@
 import React from 'react';
 import tricep_push from '../gifs/tricep_push.gif'
 import tricep_extension from '../gifs/tricep_extension.gif'
+import NavBar from '../components/navBar';
+
 
 const tricepExercises = [
   {
@@ -26,6 +28,7 @@ const tricepExercises = [
 function Triceps() {
   return (
     <div>
+      <NavBar></NavBar>
       <h1>Tricep Exercises</h1>
       {tricepExercises.map((exercise, index) => (
         <div key={index}>

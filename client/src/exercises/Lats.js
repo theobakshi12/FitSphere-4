@@ -2,6 +2,8 @@ import React from 'react';
 import pull_up from '../gifs/pull_up.gif'
 import lat_pulldown from '../gifs/lat_pulldown.gif'
 import seated_row from '../gifs/seated_row.gif'
+import NavBar from '../components/navBar';
+
 
 const latExercises = [
   {
@@ -36,6 +38,7 @@ const latExercises = [
 function Lats() {
   return (
     <div>
+      <NavBar></NavBar>
       <h1>Lat Exercises</h1>
       {latExercises.map((exercise, index) => (
         <div key={index}>

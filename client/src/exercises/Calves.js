@@ -1,6 +1,8 @@
 import React from 'react';
 import sitting_calf from '../gifs/seated_calf.gif';
 import standing_calf from '../gifs/standing_calf.gif'
+import NavBar from '../components/navBar';
+
 
 const calfExercises = [
   {
@@ -24,6 +26,7 @@ const calfExercises = [
 function Calves() {
   return (
     <div>
+      <NavBar></NavBar>
       <h1>Calf Exercises</h1>
       {calfExercises.map((exercise, index) => (
         <div key={index}>

@@ -1,6 +1,8 @@
 import React from 'react';
 import bench_press from '../gifs/bench_press.gif'
 import chest_press from '../gifs/Chest_press.gif'
+import NavBar from '../components/navBar';
+
 
 const chestExercises = [
   {
@@ -24,6 +26,7 @@ const chestExercises = [
 function Chest() {
   return (
     <div>
+      <NavBar></NavBar>
       <h1>Chest Exercises</h1>
       {chestExercises.map((exercise, index) => (
         <div key={index}>

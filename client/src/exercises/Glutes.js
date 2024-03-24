@@ -2,6 +2,8 @@ import React from 'react';
 import squats from '../gifs/squat.gif'
 import split_squats from '../gifs/split_squat.gif'
 import hip_thrust from '../gifs/hip_thrust.gif'
+import NavBar from '../components/navBar';
+
 
 const gluteExercises = [
   {
@@ -37,6 +39,7 @@ const gluteExercises = [
 function Glutes() {
   return (
     <div>
+      <NavBar></NavBar>
       <h1>Glute Exercises</h1>
       {gluteExercises.map((exercise, index) => (
         <div key={index}>

@@ -2,6 +2,8 @@ import React from 'react';
 import Barbell_curl from '../gifs/Barbell_curl.gif';
 import cable_curls from '../gifs/cable_curls.gif';
 import dumbbels_curls from '../gifs/dumbbell_curls.gif'
+import NavBar from '../components/navBar';
+
 
 const bicepsExercises = [
   {
@@ -33,6 +35,7 @@ const bicepsExercises = [
 function Bicep() {
   return (
     <div>
+      <NavBar></NavBar>
       <h1>Biceps Exercises</h1>
       {bicepsExercises.map((exercise, index) => (
         <div key={index}>

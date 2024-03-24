@@ -2,7 +2,7 @@ import React from 'react';
 import squats from '../gifs/squat.gif'
 import split_squats from '../gifs/split_squat.gif'
 import leg_extension from '../gifs/leg_extension.gif'
-
+import NavBar from '../components/navBar';
 
 const quadExercises = [
   {
@@ -38,6 +38,7 @@ const quadExercises = [
 function Quads() {
   return (
     <div>
+      <NavBar></NavBar>
       <h1>Quad Exercises</h1>
       {quadExercises.map((exercise, index) => (
         <div key={index}>

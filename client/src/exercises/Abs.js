@@ -1,6 +1,7 @@
 import React from 'react';
 import russian_twist from '../gifs/russian_twist.gif'
 import knee_raise from '../gifs/knee_raise.gif'
+import NavBar from '../components/navBar';
 
 const abExercises = [
   {
@@ -25,6 +26,7 @@ const abExercises = [
 function Abs() {
   return (
     <div>
+      <NavBar></NavBar>
       <h1>Ab Exercises</h1>
       {abExercises.map((exercise, index) => (
         <div key={index}>
