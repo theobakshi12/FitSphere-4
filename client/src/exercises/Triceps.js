@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Exercises.css";
 import tricep_push from '../gifs/tricep_push.gif'
 import tricep_extension from '../gifs/tricep_extension.gif'
 import NavBar from '../components/navBar';
@@ -29,11 +30,11 @@ function Triceps() {
   return (
     <div>
       <NavBar></NavBar>
-      <h1>Tricep Exercises</h1>
+      <h1>TRICEP EXERCISES</h1>
       {tricepExercises.map((exercise, index) => (
-        <div key={index}>
+        <div class="container" key={index}>
           <h2>{exercise.name}</h2>
-          <img src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
+          <img className="wo" src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
           <p>{exercise.description}</p>
         </div>
       ))}

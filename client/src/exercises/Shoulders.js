@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Exercises.css";
 import shoulder_press from '../gifs/shoulder_press.gif'
 import front_raises from '../gifs/front_raises.gif'
 import lateral_raises from '../gifs/lateral_raises.gif'
@@ -39,11 +40,11 @@ function Shoulders() {
   return (
     <div>
       <NavBar></NavBar>
-      <h1>Shoulder Exercises</h1>
+      <h1>SHOULDER EXERCISES</h1>
       {shoulderExercises.map((exercise, index) => (
-        <div key={index}>
+        <div class="container" key={index}>
           <h2>{exercise.name}</h2>
-          <img src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
+          <img className="wo" src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
           <p>{exercise.description}</p>
         </div>
       ))}

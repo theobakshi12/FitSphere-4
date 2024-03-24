@@ -1,4 +1,4 @@
-import React from 'react';
+import "../Exercises.css";
 import Barbell_curl from '../gifs/Barbell_curl.gif';
 import cable_curls from '../gifs/cable_curls.gif';
 import dumbbels_curls from '../gifs/dumbbell_curls.gif'
@@ -36,11 +36,11 @@ function Bicep() {
   return (
     <div>
       <NavBar></NavBar>
-      <h1>Biceps Exercises</h1>
+      <h1>BICEP EXERCISES</h1>
       {bicepsExercises.map((exercise, index) => (
-        <div key={index}>
+        <div class="container" key={index}>
           <h2>{exercise.name}</h2>
-          <img src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
+          <img className="wo" src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
           <p>{exercise.description}</p>
         </div>
       ))}

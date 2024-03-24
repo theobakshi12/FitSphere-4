@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Exercises.css";
 import squats from '../gifs/squat.gif'
 import split_squats from '../gifs/split_squat.gif'
 import leg_extension from '../gifs/leg_extension.gif'
@@ -39,11 +40,11 @@ function Quads() {
   return (
     <div>
       <NavBar></NavBar>
-      <h1>Quad Exercises</h1>
+      <h1>QUAD EXERCISES</h1>
       {quadExercises.map((exercise, index) => (
-        <div key={index}>
+        <div class="container" key={index}>
           <h2>{exercise.name}</h2>
-          <img src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
+          <img className="wo" src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
           <p>{exercise.description}</p>
         </div>
       ))}

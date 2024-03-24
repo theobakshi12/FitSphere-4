@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Exercises.css";
 import pull_up from '../gifs/pull_up.gif'
 import lat_pulldown from '../gifs/lat_pulldown.gif'
 import seated_row from '../gifs/seated_row.gif'
@@ -39,11 +40,11 @@ function Lats() {
   return (
     <div>
       <NavBar></NavBar>
-      <h1>Lat Exercises</h1>
+      <h1>LAT EXERCISES</h1>
       {latExercises.map((exercise, index) => (
         <div key={index}>
-          <h2>{exercise.name}</h2>
-          <img src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
+          <h2> class="container" {exercise.name}</h2>
+          <img className="wo" src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
           <p>{exercise.description}</p>
         </div>
       ))}

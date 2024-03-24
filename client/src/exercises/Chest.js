@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Exercises.css";
 import bench_press from '../gifs/bench_press.gif'
 import chest_press from '../gifs/Chest_press.gif'
 import NavBar from '../components/navBar';
@@ -27,11 +28,11 @@ function Chest() {
   return (
     <div>
       <NavBar></NavBar>
-      <h1>Chest Exercises</h1>
+      <h1>CHEST EXERCISES</h1>
       {chestExercises.map((exercise, index) => (
-        <div key={index}>
+        <div class="container" key={index}>
           <h2>{exercise.name}</h2>
-          <img src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
+          <img className="wo" src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
           <p>{exercise.description}</p>
         </div>
       ))}

@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Exercises.css";
 import sitting_calf from '../gifs/seated_calf.gif';
 import standing_calf from '../gifs/standing_calf.gif'
 import NavBar from '../components/navBar';
@@ -27,11 +28,11 @@ function Calves() {
   return (
     <div>
       <NavBar></NavBar>
-      <h1>Calf Exercises</h1>
+      <h1>CALF EXERCISES</h1>
       {calfExercises.map((exercise, index) => (
-        <div key={index}>
+        <div class="container" key={index}>
           <h2>{exercise.name}</h2>
-          <img src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
+          <img className="wo" src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
           <p>{exercise.description}</p>
         </div>
       ))}

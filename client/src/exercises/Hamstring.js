@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Exercises.css";
 import hamstring_curl from '../gifs/hamstring_curl.gif'
 import deadlift from '../gifs/deadlift.gif'
 import NavBar from '../components/navBar';
@@ -29,11 +30,11 @@ function Hamstring() {
   return (
     <div>
       <NavBar></NavBar>
-      <h1>HamString Exercises</h1>
+      <h1>HAMSTRING EXERCISES</h1>
       {hamstringExercises.map((exercise, index) => (
-        <div key={index}>
+        <div class="container" key={index}>
           <h2>{exercise.name}</h2>
-          <img src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
+          <img className="wo" src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
           <p>{exercise.description}</p>
         </div>
       ))}
