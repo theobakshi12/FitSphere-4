@@ -4,6 +4,7 @@ import shoulder_press from '../gifs/shoulder_press.gif'
 import front_raises from '../gifs/front_raises.gif'
 import lateral_raises from '../gifs/lateral_raises.gif'
 import NavBar from '../components/navBar';
+import Button from 'react-bootstrap/esm/Button';
 
 
 const shoulderExercises = [
@@ -41,6 +42,7 @@ function Shoulders() {
     <div>
       <NavBar></NavBar>
       <h1>SHOULDER EXERCISES</h1>
+      <Button className="back-button" href="/body" variant="btn btn-outline-dark">back to workout helper</Button>{' '}
       {shoulderExercises.map((exercise, index) => (
         <div class="container" key={index}>
           <h2>{exercise.name}</h2>

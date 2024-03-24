@@ -3,6 +3,8 @@ import Barbell_curl from '../gifs/Barbell_curl.gif';
 import cable_curls from '../gifs/cable_curls.gif';
 import dumbbels_curls from '../gifs/dumbbell_curls.gif'
 import NavBar from '../components/navBar';
+import Button from 'react-bootstrap/esm/Button';
+
 
 
 const bicepsExercises = [
@@ -37,6 +39,7 @@ function Bicep() {
     <div>
       <NavBar></NavBar>
       <h1>BICEP EXERCISES</h1>
+      <Button className="back-button" href="/body" variant="btn btn-outline-dark">back to workout helper</Button>{' '}
       {bicepsExercises.map((exercise, index) => (
         <div class="container" key={index}>
           <h2>{exercise.name}</h2>

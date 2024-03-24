@@ -4,6 +4,7 @@ import squats from '../gifs/squat.gif'
 import split_squats from '../gifs/split_squat.gif'
 import leg_extension from '../gifs/leg_extension.gif'
 import NavBar from '../components/navBar';
+import Button from 'react-bootstrap/esm/Button';
 
 const quadExercises = [
   {
@@ -41,6 +42,7 @@ function Quads() {
     <div>
       <NavBar></NavBar>
       <h1>QUAD EXERCISES</h1>
+      <Button className="back-button" href="/body" variant="btn btn-outline-dark">back to workout helper</Button>{' '}
       {quadExercises.map((exercise, index) => (
         <div class="container" key={index}>
           <h2>{exercise.name}</h2>

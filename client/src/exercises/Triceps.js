@@ -3,6 +3,7 @@ import "../Exercises.css";
 import tricep_push from '../gifs/tricep_push.gif'
 import tricep_extension from '../gifs/tricep_extension.gif'
 import NavBar from '../components/navBar';
+import Button from 'react-bootstrap/esm/Button';
 
 
 const tricepExercises = [
@@ -31,6 +32,7 @@ function Triceps() {
     <div>
       <NavBar></NavBar>
       <h1>TRICEP EXERCISES</h1>
+      <Button className="back-button" href="/body" variant="btn btn-outline-dark">back to workout helper</Button>{' '}
       {tricepExercises.map((exercise, index) => (
         <div class="container" key={index}>
           <h2>{exercise.name}</h2>

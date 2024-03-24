@@ -3,6 +3,7 @@ import "../Exercises.css";
 import sitting_calf from '../gifs/seated_calf.gif';
 import standing_calf from '../gifs/standing_calf.gif'
 import NavBar from '../components/navBar';
+import Button from 'react-bootstrap/esm/Button';
 
 
 const calfExercises = [
@@ -29,6 +30,7 @@ function Calves() {
     <div>
       <NavBar></NavBar>
       <h1>CALF EXERCISES</h1>
+      <Button className="back-button" href="/body" variant="btn btn-outline-dark">back to workout helper</Button>{' '}
       {calfExercises.map((exercise, index) => (
         <div class="container" key={index}>
           <h2>{exercise.name}</h2>

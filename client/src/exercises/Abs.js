@@ -3,6 +3,8 @@ import React from 'react';
 import russian_twist from '../gifs/russian_twist.gif'
 import knee_raise from '../gifs/knee_raise.gif'
 import NavBar from '../components/navBar';
+import Button from 'react-bootstrap/esm/Button';
+
 
 const abExercises = [
   {
@@ -29,6 +31,7 @@ function Abs() {
     <div>
       <NavBar></NavBar>
       <h1>AB EXERCISES</h1>
+      <Button className="back-button" href="/body" variant="btn btn-outline-dark">back to workout helper</Button>{' '}
       {abExercises.map((exercise, index) => (
         <div class="container" key={index}>
           <h2>{exercise.name}</h2>

@@ -4,6 +4,7 @@ import squats from '../gifs/squat.gif'
 import split_squats from '../gifs/split_squat.gif'
 import hip_thrust from '../gifs/hip_thrust.gif'
 import NavBar from '../components/navBar';
+import Button from 'react-bootstrap/esm/Button';
 
 
 const gluteExercises = [
@@ -42,6 +43,7 @@ function Glutes() {
     <div>
       <NavBar></NavBar>
       <h1>GLUTE EXERCISES</h1>
+      <Button className="back-button" href="/body" variant="btn btn-outline-dark">back to workout helper</Button>{' '}
       {gluteExercises.map((exercise, index) => (
         <div class="container" key={index}>
           <h2>{exercise.name}</h2>

@@ -4,6 +4,7 @@ import pull_up from '../gifs/pull_up.gif'
 import lat_pulldown from '../gifs/lat_pulldown.gif'
 import seated_row from '../gifs/seated_row.gif'
 import NavBar from '../components/navBar';
+import Button from 'react-bootstrap/esm/Button';
 
 
 const latExercises = [
@@ -41,6 +42,7 @@ function Lats() {
     <div>
       <NavBar></NavBar>
       <h1>LAT EXERCISES</h1>
+      <Button className="back-button" href="/body" variant="btn btn-outline-dark">back to workout helper</Button>{' '}
       {latExercises.map((exercise, index) => (
         <div key={index}>
           <h2> class="container" {exercise.name}</h2>

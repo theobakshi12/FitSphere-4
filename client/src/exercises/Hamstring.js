@@ -3,6 +3,7 @@ import "../Exercises.css";
 import hamstring_curl from '../gifs/hamstring_curl.gif'
 import deadlift from '../gifs/deadlift.gif'
 import NavBar from '../components/navBar';
+import Button from 'react-bootstrap/esm/Button';
 
 
 const hamstringExercises = [
@@ -31,6 +32,7 @@ function Hamstring() {
     <div>
       <NavBar></NavBar>
       <h1>HAMSTRING EXERCISES</h1>
+      <Button className="back-button" href="/body" variant="btn btn-outline-dark">back to workout helper</Button>{' '}
       {hamstringExercises.map((exercise, index) => (
         <div class="container" key={index}>
           <h2>{exercise.name}</h2>
