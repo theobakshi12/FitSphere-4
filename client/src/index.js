@@ -8,7 +8,6 @@ import './index.css';
 import App from './App';
 import Body from './Body';
 import reportWebVitals from './reportWebVitals';
-import Exercises from './Exercises';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Abs from './exercises/Abs';
 import Bicep from './exercises/Bicep';
@@ -25,10 +24,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
-  },
-  {
-    path:"/exercises",
-    element: <Exercises></Exercises>
   },
   {
     path:"/body",
