@@ -20,11 +20,14 @@ import Lats from './exercises/Lats';
 import Quads from './exercises/Quads';
 import Shoulders from './exercises/Shoulders';
 import Triceps from './exercises/Triceps';
+import { AppProvider } from './AppContext';
+
 
 const router = createBrowserRouter([
+
   {
     path: "/",
-    element: <App></App>,
+    element: <AppProvider><App></App></AppProvider>,
   },
   {
     path:"/body",

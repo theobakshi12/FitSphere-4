@@ -53,12 +53,12 @@
 }
 
 .react-calendar .react-calendar__tile.highlighted-day {
-    background-color: greenyellow; 
+    background-color: rgb(221, 221, 221); 
     font-weight: bold; 
   }
 
   .react-calendar__tile--active {
-    background: greenyellow !important;
+    background: rgb(221, 221, 221) !important;
     color: #212529 !important; 
   }
   
@@ -68,7 +68,9 @@
   }
 
   .react-calendar__tile--active:focus {
-    background: greenyellow !important;
+    background: rgb(221, 221, 221) !important;
     color: #212529 !important; 
   }
+
+  
   

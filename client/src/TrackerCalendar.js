@@ -2,17 +2,23 @@ import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import './Calendar.css';
+import { useAppContext } from './AppContext'; 
 
-function MyTrackerCalendar() {
+
+function TrackerCalendar() {
   const [selectedDates, setSelectedDates] = useState(new Set());
+  const { setHighlightedDaysCount } = useAppContext();
 
   const handleDayClick = (value) => {
     const dateStr = value.toISOString().split('T')[0]; // Convert date to YYYY-MM-DD format
     const newSelection = new Set(selectedDates);
     if (newSelection.has(dateStr)) {
       newSelection.delete(dateStr); // If already selected, unselect it
+      setHighlightedDaysCount(previousCount => previousCount - 1);
+
     } else {
       newSelection.add(dateStr); // If not selected, add to selection
+      setHighlightedDaysCount(previousCount => previousCount + 1);
     }
     setSelectedDates(newSelection);
   };
@@ -32,4 +38,4 @@ function MyTrackerCalendar() {
   );
 }
 
-export default MyTrackerCalendar;
+export default TrackerCalendar;

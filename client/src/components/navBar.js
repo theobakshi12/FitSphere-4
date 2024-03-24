@@ -5,9 +5,16 @@ import '../Calendar.css';
 import { useState } from 'react';
 import "../App.css";
 import TrackerCalendar from '../TrackerCalendar';
+import { useAppContext } from '../AppContext'; 
+
 
 function NavBar() {
   const [date, setDate] = useState(new Date());
+  const { highlightedDaysCount, monthlyGoal, setMonthlyGoal } = useAppContext();
+
+  const handleMonthlyGoalChange = (event) => {
+    setMonthlyGoal(event.target.value); // Update monthly goal in context
+  };
 
   return (
     <Navbar>
@@ -19,16 +26,20 @@ function NavBar() {
               <NavDropdown.Item href="/homebody">Home Workouts (No Equipment)</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown className="workouts" title="Progress" id="basic-nav-dropdown">
-              <NavDropdown.Item>17 🏋️</NavDropdown.Item>
-              <h1 className='text-center'>Workout Tracker</h1>
+              
+              <h3 className='text-center'>Tracker</h3>
                 <div className='calendar-container'>
                   <TrackerCalendar onChange={setDate} value={date} />
                 </div>
-                <p className='text-center'>
-                  <span className='bold'>Selected Date:</span>{' '}
-                  {date.toDateString()}
-                </p>
-              <button>+</button>
+                <div className="dropdown">Workouts this month: {highlightedDaysCount}</div>
+                <div className="dropdown">Monthly goal: 
+                  <input 
+                    type="number" 
+                    value={monthlyGoal} 
+                    onChange={handleMonthlyGoalChange} 
+                    style={{ marginLeft: '10px', width: '60px' }}
+                  />
+                </div>
             </NavDropdown>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
