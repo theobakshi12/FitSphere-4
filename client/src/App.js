@@ -8,8 +8,11 @@ function App() {
       <NavBar></NavBar>
 
       <img className="bg" src="background.png"></img>
-      <div className="joinButton">
-      <Button variant="light">Start Your Journey</Button>{' '}
+      <div className="joinButton1">
+      <Button variant="light">Get Started at a Gym</Button>{' '}
+      </div>
+      <div className="joinButton2">
+      <Button variant="light">Get Started at Home</Button>{' '}
       </div>
     </div>
   );

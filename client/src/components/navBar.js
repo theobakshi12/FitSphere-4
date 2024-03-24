@@ -20,7 +20,7 @@ function NavBar() {
             </NavDropdown>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
-            Signed in as: <a href="#login">Grace Wang</a>
+            Signed in as: <a href="#login">Guest</a>
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>
