@@ -17,3 +17,21 @@
   z-index: 2; 
   cursor: pointer; 
 }
+
+.header {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.header1 {
+  margin-left: 33%;
+}
+
+.image {
+  margin-left: 50%;
+}
+
+.button {
+  margin-left: 50%;
+}
