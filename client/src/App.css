@@ -14,7 +14,7 @@
 
 .joinButton {
   position: absolute;
-  bottom: 130px;
+  bottom: 10%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -22,4 +22,9 @@
 
 .bg {
   width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #dad5d1;
 }
