@@ -15,7 +15,7 @@ function NavBar() {
               <NavDropdown.Item href="/homebody">Home Workouts (No Equipment)</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown className="workouts" title="Progress" id="basic-nav-dropdown">
-              <NavDropdown.Item>17 💪</NavDropdown.Item>
+              <NavDropdown.Item>17 🏋️</NavDropdown.Item>
             </NavDropdown>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
