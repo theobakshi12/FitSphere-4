@@ -1,7 +1,7 @@
 .rounded-float-left {
   width: 50px;
   height: 50px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .logo {
@@ -10,4 +10,12 @@
 
 .workouts {
   margin-right: 20px;
+}
+
+.joinButton {
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }

@@ -1,13 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Button from '@mui/material/Button';
-import NavBar from "./components/navBar";
+import Button from "react-bootstrap/Button";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div>
       <NavBar></NavBar>
-      
       {/* <StyledMenu
         id="demo-customized-menu"
         MenuListProps={{
