@@ -1,6 +1,6 @@
 import "./App.css";
 import Button from "react-bootstrap/Button";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/navBar";
 
 function App() {
   return (
