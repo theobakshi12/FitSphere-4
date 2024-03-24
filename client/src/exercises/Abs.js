@@ -1,29 +1,32 @@
 import React from 'react';
+import russian_twist from '../gifs/russian_twist.gif'
+import knee_raise from '../gifs/knee_raise.gif'
 
-const latExercises = [
+const abExercises = [
   {
-    name: 'Pull Up',
-    description: 'Barbell curls are a classic biceps exercise that targets the biceps brachii muscle.',
-    image: 'barbell_curl.jpg'
+    name: 'Hanging Knee Raises',
+    description: 'Hanging knee raises are a bodyweight exercise targeting the abdominal muscles, particularly the lower abdominals. '
+    + 'To perform hanging knee raises, hang from a pull-up bar with arms fully extended and knees bent. Engage your core muscles to '
+    + 'lift your knees up toward your chest, then lower them back down under control to complete one repetition. Hanging knee raises '
+    + 'are effective for strengthening the core, improving abdominal stability, and enhancing overall abdominal muscle definition.',
+    image: knee_raise
   },
   {
-    name: 'Lat Pull Down',
-    description: 'Hammer curls target the biceps brachii and the brachialis muscles and can help build forearm strength.',
-    image: 'dumbbell_hammer_curl.jpg'
+    name: 'Russian Twist',
+    description: 'Russian twists are a core-strengthening exercise that targets the obliques and abdominals. To perform Russian twists, '
+    + 'sit on the ground with knees bent, lean back slightly, and hold a weight or medicine ball in front of your chest. Twist your torso '
+    + 'to the left, then to the right, while keeping your core engaged and feet elevated, alternating sides to complete one repetition. '
+    + 'Russian twists help improve rotational strength, stability, and overall core endurance.',
+    image: russian_twist
   },
-  {
-    name: 'Cable Row',
-    description: 'Preacher curls isolate the biceps and minimize cheating, making them an effective exercise for targeting the biceps brachii.',
-    image: 'preacher_curl.jpg'
-  },
-  // Add more exercises as needed
+
 ];
 
 function ExerciseList() {
   return (
     <div>
-      <h1>Lat Exercises</h1>
-      {latExercises.map((exercise, index) => (
+      <h1>Ab Exercises</h1>
+      {abExercises.map((exercise, index) => (
         <div key={index}>
           <h2>{exercise.name}</h2>
           <img src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
