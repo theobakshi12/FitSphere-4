@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Button from '@mui/material/Button';
+import NavBar from "./components/navBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar></NavBar>
+      {/* <StyledMenu
+        id="demo-customized-menu"
+        MenuListProps={{
+          "aria-labelledby": "demo-customized-button",
+        }}
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+      >
+        <MenuItem onClick={handleClose} disableRipple>
+          <EditIcon />
+          Edit
+        </MenuItem>
+        <MenuItem onClick={handleClose} disableRipple>
+          <FileCopyIcon />
+          Duplicate
+        </MenuItem>
+        <Divider sx={{ my: 0.5 }} />
+        <MenuItem onClick={handleClose} disableRipple>
+          <ArchiveIcon />
+          Archive
+        </MenuItem>
+        <MenuItem onClick={handleClose} disableRipple>
+          <MoreHorizIcon />
+          More
+        </MenuItem>
+      </StyledMenu> */}
     </div>
   );
 }
