@@ -44,8 +44,8 @@ function Lats() {
       <h1>LAT EXERCISES</h1>
       <Button className="back-button" href="/body" variant="btn btn-outline-dark">back to workout helper</Button>{' '}
       {latExercises.map((exercise, index) => (
-        <div key={index}>
-          <h2> class="container" {exercise.name}</h2>
+        <div class="container" key={index}>
+          <h2> {exercise.name}</h2>
           <img className="wo" src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />
           <p>{exercise.description}</p>
         </div>
