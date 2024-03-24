@@ -9,9 +9,9 @@ function NavBar() {
     <Navbar>
       <Container className="bg-body-tertiary">
       <img src="/fitsphere.png" class="rounded-float-left" alt="..."/>
-        <Navbar.Brand className="logo" href="#home">FITSPHERE</Navbar.Brand>
+        <Navbar.Brand className="logo" href="/">FITSPHERE</Navbar.Brand>
         <NavDropdown className="workouts" title="Workouts" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#gymWorkouts">Gym Workouts</NavDropdown.Item>
+              <NavDropdown.Item href="/body">Gym Workouts</NavDropdown.Item>
               <NavDropdown.Item href="#homeWorkouts">Home Workouts (No Equipment)</NavDropdown.Item>
             </NavDropdown>
         <Nav.Link href="#progress">Progress</Nav.Link>

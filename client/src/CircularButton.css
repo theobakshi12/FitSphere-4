@@ -1,0 +1,8 @@
+.circular-button {
+    border-radius: 50%;
+    width: 20px; 
+    height: 20px; 
+    padding: 0; 
+    background-color: grey;
+    border-color: black;
+  }

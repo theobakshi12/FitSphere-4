@@ -6,9 +6,11 @@ import {
 } from "react-router-dom";
 import './index.css';
 import App from './App';
+import Body from './Body';
 import reportWebVitals from './reportWebVitals';
 import Exercises from './Exercises';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ExerciseList from './exercises/Abs';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
   {
     path:"/exercises",
     element: <Exercises></Exercises>
+  },
+  {
+    path:"/body",
+    element: <Body></Body>
+  },
+  {
+    path:"/chest",
+    element: <ExerciseList></ExerciseList>
   }
 
 ]);
