@@ -1,29 +1,31 @@
 import React from 'react';
+import sitting_calf from '../gifs/seated_calf.gif';
+import standing_calf from '../gifs/standing_calf.gif'
 
-const latExercises = [
+const calfExercises = [
   {
-    name: 'Pull Up',
-    description: 'Barbell curls are a classic biceps exercise that targets the biceps brachii muscle.',
-    image: 'barbell_curl.jpg'
+    name: 'Seated Calf Raise',
+    description: 'Seated calf raises are a strength-training exercise that targets the calf muscles. To perform them, '
+    + 'sit on a seated calf raise machine with your knees bent and feet on the platform. Push through the balls of your '
+    + 'feet to raise the weight by extending your ankles, then lower the weight back down to complete one repetition. '
+    + 'Seated calf raises help strengthen and define the calf muscles, aiding in ankle stability and athletic performance.',
+    image: sitting_calf
   },
   {
-    name: 'Lat Pull Down',
-    description: 'Hammer curls target the biceps brachii and the brachialis muscles and can help build forearm strength.',
-    image: 'dumbbell_hammer_curl.jpg'
+    name: 'Standing Calf Raise',
+    description: 'Standing calf raises are a lower body exercise targeting the calf muscles. To perform them, stand with feet '
+    + 'hip-width apart and rise up onto the balls of your feet, lifting your heels as high as possible. Lower your heels back '
+    + 'down to the ground under control to complete one repetition. Standing calf raises help strengthen and develop the calf '
+    + 'muscles, improving ankle stability and athletic performance.',
+    image: standing_calf
   },
-  {
-    name: 'Cable Row',
-    description: 'Preacher curls isolate the biceps and minimize cheating, making them an effective exercise for targeting the biceps brachii.',
-    image: 'preacher_curl.jpg'
-  },
-  // Add more exercises as needed
 ];
 
 function ExerciseList() {
   return (
     <div>
-      <h1>Lat Exercises</h1>
-      {latExercises.map((exercise, index) => (
+      <h1>Calf Exercises</h1>
+      {calfExercises.map((exercise, index) => (
         <div key={index}>
           <h2>{exercise.name}</h2>
           <img src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />

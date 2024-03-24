@@ -1,7 +1,7 @@
 import React from 'react';
 import shoulder_press from '../gifs/shoulder_press.gif'
 import front_raises from '../gifs/front_raises.gif'
-import lateral_raises from '../gifs/later_raises.gif'
+import lateral_raises from '../gifs/lateral_raises.gif'
 
 const shoulderExercises = [
   {

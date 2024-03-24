@@ -1,29 +1,33 @@
 import React from 'react';
+import hamstring_curl from '../gifs/hamstring_curl.gif'
+import deadlift from '../gifs/deadlift.gif'
 
-const latExercises = [
+const hamstringExercises = [
   {
-    name: 'Pull Up',
-    description: 'Barbell curls are a classic biceps exercise that targets the biceps brachii muscle.',
-    image: 'barbell_curl.jpg'
+    name: 'Deadlift',
+    description: 'The deadlift is a compound strength-training exercise that targets multiple muscle groups, '
+    + 'including the lower back, glutes, hamstrings, and core. To perform a deadlift, stand with feet shoulder-width apart, '
+    + 'bend at the hips and knees to grip a barbell, and lift the weight by extending your hips and knees until standing upright. '
+    + 'Lower the barbell back down to the ground under control to complete one repetition. Deadlifts are highly effective for building '
+    + 'overall strength, enhancing posture, and developing functional movement patterns.',
+    image: deadlift
   },
   {
-    name: 'Lat Pull Down',
-    description: 'Hammer curls target the biceps brachii and the brachialis muscles and can help build forearm strength.',
-    image: 'dumbbell_hammer_curl.jpg'
+    name: 'Hamstring Curl',
+    description: 'The hamstring curl is a lower body exercise that targets the muscles of the hamstrings. '
+    + 'To perform it, lie face down on a leg curl machine with your knees just off the end of the bench and '
+    + 'the padded lever against the back of your ankles. Curl your heels towards your buttocks by flexing your knees, '
+    + 'then slowly lower the weight back down to complete one repetition. Hamstring curls are effective for strengthening '
+    + 'the hamstrings, improving knee stability, and enhancing athletic performance.',
+    image: hamstring_curl
   },
-  {
-    name: 'Cable Row',
-    description: 'Preacher curls isolate the biceps and minimize cheating, making them an effective exercise for targeting the biceps brachii.',
-    image: 'preacher_curl.jpg'
-  },
-  // Add more exercises as needed
 ];
 
 function ExerciseList() {
   return (
     <div>
-      <h1>Lat Exercises</h1>
-      {latExercises.map((exercise, index) => (
+      <h1>HamString Exercises</h1>
+      {hamstringExercises.map((exercise, index) => (
         <div key={index}>
           <h2>{exercise.name}</h2>
           <img src={exercise.image} alt={exercise.name} style={{ maxWidth: '200px' }} />

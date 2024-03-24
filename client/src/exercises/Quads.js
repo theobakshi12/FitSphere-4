@@ -1,6 +1,6 @@
 import React from 'react';
-import squats from '../gifs/squats.gif'
-import split_squats from '../gifs/split_squats.gif'
+import squats from '../gifs/squat.gif'
+import split_squats from '../gifs/split_squat.gif'
 import leg_extension from '../gifs/leg_extension.gif'
 
 
